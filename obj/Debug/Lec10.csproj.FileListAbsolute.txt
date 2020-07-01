@@ -1,0 +1,10 @@
+E:\ICT\C#\Lec10\Lec10\bin\Debug\Lec10.exe.config
+E:\ICT\C#\Lec10\Lec10\bin\Debug\Lec10.exe
+E:\ICT\C#\Lec10\Lec10\bin\Debug\Lec10.pdb
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.csprojAssemblyReference.cache
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.Properties.Resources.resources
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.csproj.GenerateResource.cache
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.csproj.CoreCompileInputs.cache
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.exe
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.pdb
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.DataGridView.resources
