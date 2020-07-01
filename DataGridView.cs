@@ -42,7 +42,7 @@ namespace Lec10
 
             //Adding a New Row to Dataset
             DataRow row = set.Tables["Items"].NewRow();
-            row["Id"] = 3;
+            row["Id"] = 1;
             row["Name"] = "4GB DDR3 RAM";
             row["Price"] = "50";
             row["Date"] = "26 May 2019";
@@ -67,7 +67,7 @@ namespace Lec10
             DataSet set = new DataSet();
             adapter.Fill(set, "Items");
 
-            set.Tables["Items"].Rows[2]["Name"] = "Graphics Card";
+            set.Tables["Items"].Rows[0]["Name"] = "Graphics Card";
 
             dataGridView1.DataSource = set.Tables["Items"];
 
@@ -88,7 +88,7 @@ namespace Lec10
             DataSet set = new DataSet();
             adapter.Fill(set, "Items");
 
-            set.Tables["Items"].Rows[1].Delete();
+            set.Tables["Items"].Rows[0].Delete();
 
             dataGridView1.DataSource = set.Tables["Items"];
 
