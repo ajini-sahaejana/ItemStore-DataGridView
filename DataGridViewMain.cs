@@ -32,19 +32,19 @@ namespace Lec10
 
         public void insertD_Click(object sender, EventArgs e)
         {
-            InsertData i1 = new InsertData();
+            InsertData i1 = new InsertData(this);
             i1.Show();
         }
 
         private void updateD_Click(object sender, EventArgs e)
         {
-            UpdateData u1 = new UpdateData();
+            UpdateData u1 = new UpdateData(this);
             u1.Show();
         }
 
         private void deleteD_Click(object sender, EventArgs e)
         {
-            DeleteData d1 = new DeleteData();
+            DeleteData d1 = new DeleteData(this);
             d1.Show();
         }
     }

@@ -13,9 +13,11 @@ namespace Lec10
 {
     public partial class UpdateData : Form
     {
-        public UpdateData()
+        DataGridViewMain dgvm;
+        public UpdateData(DataGridViewMain dg)
         {
             InitializeComponent();
+            this.dgvm = dg;
         }
 
 private void updateSubmit_Click(object sender, EventArgs e)
@@ -31,8 +33,7 @@ private void updateSubmit_Click(object sender, EventArgs e)
             int row = (int.Parse(updateId.Text)) - 1;
             set.Tables["Items"].Rows[row]["Name"] = updateName.Text;
 
-            DataGridView dgv = new DataGridView();
-            dgv.DataSource = set.Tables["Items"];
+            dgvm.dataGridView1.DataSource = set.Tables["Items"];
 
             //Updating Database Table
             SqlCommandBuilder builder = new SqlCommandBuilder(adapter);

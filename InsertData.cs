@@ -14,9 +14,12 @@ namespace Lec10
 {
     public partial class InsertData : Form
     {
-        public InsertData()
+        DataGridViewMain dgvm;
+
+        public InsertData(DataGridViewMain dg)
         {
             InitializeComponent();
+            this.dgvm = dg;
         }
 
         public void addSubmit_Click(object sender, EventArgs e)
@@ -36,16 +39,14 @@ namespace Lec10
             row["Price"] = addPrice.Text;
             row["Date"] = addDate.Text;
             set.Tables["Items"].Rows.Add(row);
-
-            DataGridView dataGridView1 = new DataGridView();
-            dataGridView1.DataSource = set.Tables["Items"];
+            
+            dgvm.dataGridView1.DataSource = set.Tables["Items"];
 
             //Updating Database Table
             SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
             adapter.Update(set.Tables["Items"]);
 
             MessageBox.Show("Dataset Saved to Database Successfully!");
-            dataGridView1.Refresh();
         }
     }
 }

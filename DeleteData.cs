@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 namespace Lec10
-{
-    public partial class DeleteData : Form
+{    public partial class DeleteData : Form
     {
-        public DeleteData()
+        DataGridViewMain dgvm;
+        public DeleteData(DataGridViewMain dg)
         {
             InitializeComponent();
+            this.dgvm = dg;
         }
 
 private void deleteSubmit_Click(object sender, EventArgs e)
@@ -28,11 +29,13 @@ private void deleteSubmit_Click(object sender, EventArgs e)
             DataSet set = new DataSet();
             adapter.Fill(set, "Items");
 
+            //int rowindex = dgvm.dataGridView1.CurrentCell.RowIndex;
+            //dgvm.dataGridView1.Rows.RemoveAt(rowindex);
+
             int row = (int.Parse(deleteId.Text)) - 1;
             set.Tables["Items"].Rows[row].Delete();
 
-            DataGridView dgv = new DataGridView();
-            dgv.DataSource = set.Tables["Items"];
+            dgvm.dataGridView1.DataSource = set.Tables["Items"];
 
             //Updating Database Table
             SqlCommandBuilder builder = new SqlCommandBuilder(adapter);

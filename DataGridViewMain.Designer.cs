@@ -107,7 +107,7 @@
         private System.Windows.Forms.Button updateD;
         private System.Windows.Forms.Button insertD;
         private System.Windows.Forms.Button deleteD;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
