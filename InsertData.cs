@@ -47,6 +47,7 @@ namespace Lec10
             adapter.Update(set.Tables["Items"]);
 
             MessageBox.Show("Dataset Saved to Database Successfully!");
+            this.Hide();
         }
     }
 }

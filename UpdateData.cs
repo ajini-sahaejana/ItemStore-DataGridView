@@ -20,7 +20,7 @@ namespace Lec10
             this.dgvm = dg;
         }
 
-private void updateSubmit_Click(object sender, EventArgs e)
+        private void updateSubmit_Click(object sender, EventArgs e)
         {
             //Fill Dataset
             string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\ICT\C#\Lec10\Lec10.mdf;Integrated Security=True;Connect Timeout=30";
@@ -40,7 +40,7 @@ private void updateSubmit_Click(object sender, EventArgs e)
             adapter.Update(set.Tables["Items"]);
 
             MessageBox.Show("Database Updated Successfully!");
-
+            this.Hide();
         }
     }
 }

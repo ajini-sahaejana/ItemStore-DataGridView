@@ -19,7 +19,7 @@ namespace Lec10
             this.dgvm = dg;
         }
 
-private void deleteSubmit_Click(object sender, EventArgs e)
+        private void deleteSubmit_Click(object sender, EventArgs e)
         {
             //Fill Dataset
             string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\ICT\C#\Lec10\Lec10.mdf;Integrated Security=True;Connect Timeout=30";
@@ -42,7 +42,7 @@ private void deleteSubmit_Click(object sender, EventArgs e)
             adapter.Update(set.Tables["Items"]);
 
             MessageBox.Show("Data Deleted Successfully!");
-
+            this.Hide();
         }
     }
 }
