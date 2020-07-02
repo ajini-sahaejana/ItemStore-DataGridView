@@ -46,16 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataGridView.cs">
+    <Compile Include="DataGridViewMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataGridView.Designer.cs">
-      <DependentUpon>DataGridView.cs</DependentUpon>
+    <Compile Include="DataGridViewMain.Designer.cs">
+      <DependentUpon>DataGridViewMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteData.Designer.cs">
+      <DependentUpon>DeleteData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertData.Designer.cs">
+      <DependentUpon>InsertData.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DataGridView.resx">
-      <DependentUpon>DataGridView.cs</DependentUpon>
+    <Compile Include="UpdateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateData.Designer.cs">
+      <DependentUpon>UpdateData.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataGridViewMain.resx">
+      <DependentUpon>DataGridViewMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteData.resx">
+      <DependentUpon>DeleteData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertData.resx">
+      <DependentUpon>InsertData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UpdateData.resx">
+      <DependentUpon>UpdateData.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

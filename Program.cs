@@ -16,7 +16,7 @@ namespace Lec10
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataGridView());
+            Application.Run(new DataGridViewMain());
         }
     }
 }

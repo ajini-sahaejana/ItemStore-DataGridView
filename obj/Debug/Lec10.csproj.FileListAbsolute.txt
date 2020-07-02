@@ -7,4 +7,7 @@ E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.csproj.GenerateResource.cache
 E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.csproj.CoreCompileInputs.cache
 E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.exe
 E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.pdb
-E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.DataGridView.resources
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.DeleteData.resources
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.InsertData.resources
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.UpdateData.resources
+E:\ICT\C#\Lec10\Lec10\obj\Debug\Lec10.DataGridViewMain.resources

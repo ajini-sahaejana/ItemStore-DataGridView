@@ -1,6 +1,6 @@
 ﻿namespace Lec10
 {
-    partial class DataGridView
+    partial class DataGridViewMain
     {
         /// <summary>
         /// Required designer variable.
@@ -42,12 +42,12 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(350, 287);
+            this.dataGridView1.Size = new System.Drawing.Size(450, 250);
             this.dataGridView1.TabIndex = 0;
             // 
             // getD
             // 
-            this.getD.Location = new System.Drawing.Point(397, 43);
+            this.getD.Location = new System.Drawing.Point(479, 62);
             this.getD.Name = "getD";
             this.getD.Size = new System.Drawing.Size(80, 23);
             this.getD.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // updateD
             // 
-            this.updateD.Location = new System.Drawing.Point(397, 81);
+            this.updateD.Location = new System.Drawing.Point(479, 100);
             this.updateD.Name = "updateD";
             this.updateD.Size = new System.Drawing.Size(80, 23);
             this.updateD.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // insertD
             // 
-            this.insertD.Location = new System.Drawing.Point(397, 121);
+            this.insertD.Location = new System.Drawing.Point(479, 140);
             this.insertD.Name = "insertD";
             this.insertD.Size = new System.Drawing.Size(80, 23);
             this.insertD.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // deleteD
             // 
-            this.deleteD.Location = new System.Drawing.Point(397, 161);
+            this.deleteD.Location = new System.Drawing.Point(479, 180);
             this.deleteD.Name = "deleteD";
             this.deleteD.Size = new System.Drawing.Size(80, 23);
             this.deleteD.TabIndex = 4;
@@ -85,17 +85,17 @@
             this.deleteD.UseVisualStyleBackColor = true;
             this.deleteD.Click += new System.EventHandler(this.deleteD_Click);
             // 
-            // DataGridView
+            // DataGridViewMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 311);
+            this.ClientSize = new System.Drawing.Size(574, 274);
             this.Controls.Add(this.deleteD);
             this.Controls.Add(this.insertD);
             this.Controls.Add(this.updateD);
             this.Controls.Add(this.getD);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "DataGridView";
+            this.Name = "DataGridViewMain";
             this.Text = "Data Grid View";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -103,12 +103,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button getD;
         private System.Windows.Forms.Button updateD;
         private System.Windows.Forms.Button insertD;
         private System.Windows.Forms.Button deleteD;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
